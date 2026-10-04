@@ -162,7 +162,7 @@ $('sendBtn').onclick = async () => {
 function startPolling(taskId) {
   if (pollTimer) clearInterval(pollTimer);
   let attempts = 0;
-  const maxAttempts = 120; // 120 * 2s = 4 минуты
+  const maxAttempts = 1024; // 120 * 2s = 4 минуты
 
   pollTimer = setInterval(async () => {
     attempts++;
